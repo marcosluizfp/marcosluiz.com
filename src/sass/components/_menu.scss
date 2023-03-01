@@ -1,0 +1,34 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  list-style: none;
+
+  & li:first-child {
+    flex-grow: 1;
+  }
+
+  & a:link,
+  & a:visited {
+    @media (prefers-color-scheme: $dark-color-scheme) {
+      color: $text-color-dark;
+    }
+  }
+
+  & a:active,
+  & a:hover {
+    @media (prefers-color-scheme: $dark-color-scheme) {
+      // color: #e9ecef;
+    }
+  }
+
+  &__item {
+    color: $text-color-light;
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

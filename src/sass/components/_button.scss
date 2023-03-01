@@ -1,0 +1,27 @@
+.button {
+  font-size: inherit;
+  text-transform: uppercase;
+  color: $text-color-dark;
+  background-color: $primary-color;
+  border-radius: 10rem;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  text-align: center;
+  transition-duration: 0.5s;
+
+  // &:link,
+  // &:visited {
+  //   color: $text-color-dark;
+  //   background-color: $primary-color;
+  //   border-radius: 10rem;
+  //   padding: 0.8rem 1.6rem;
+  //   text-decoration: none;
+  //   text-align: center;
+  //   transition-duration: 0.5s;
+  // }
+
+  &:hover,
+  &:active {
+    opacity: 80%;
+  }
+}

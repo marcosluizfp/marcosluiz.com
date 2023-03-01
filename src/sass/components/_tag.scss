@@ -1,0 +1,19 @@
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.tag {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: $primary-color-light;
+  border-radius: 8px;
+  padding: 0.2rem 0.8rem;
+
+  @media (prefers-color-scheme: $dark-color-scheme) {
+    color: $text-color-light;
+  }
+}

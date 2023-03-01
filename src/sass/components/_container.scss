@@ -1,0 +1,11 @@
+.container {
+  max-width: 120rem;
+  /* max-width: 134rem; */
+  padding: 0 8rem;
+  margin: 0 auto;
+  height: 100%;
+
+  @include for-phone-only {
+    padding: 0 2rem;
+  }
+}

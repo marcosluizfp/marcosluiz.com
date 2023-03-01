@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline-color: #495057;
+}
+
+/* Same as html in web browser */
+:root {
+  // Base rem size = 10px
+  font-size: 62.5%;
+
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+/* Allow form fields to inherit font definitions */
+input,
+select,
+textarea,
+button {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.6rem;
+  border-width: 0.15rem;
+  border-style: solid;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (prefers-color-scheme: $dark-color-scheme) {
+  *:focus {
+    outline-color: #f1f3f5;
+  }
+}

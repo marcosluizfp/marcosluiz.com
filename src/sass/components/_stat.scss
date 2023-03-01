@@ -1,0 +1,32 @@
+.stats {
+  margin-top: 0.6rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  text-align: center;
+  background-color: $primary-color-light;
+  border: 1px solid $primary-color-border;
+  border-radius: 8px;
+  padding: 1.6rem;
+  font-size: 1.2rem;
+  overflow-wrap: anywhere;
+  height: 12rem;
+
+  @media (prefers-color-scheme: $dark-color-scheme) {
+    color: $text-color-light;
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,21 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  /* overflow-wrap: anywhere; */
+  word-break: break-all;
+  color: $primary-color;
+
+  @media (prefers-color-scheme: $dark-color-scheme) {
+    color: $primary-color-light;
+  }
+
+  &__icon {
+    fill: $primary-color;
+    width: 1.6rem;
+
+    @media (prefers-color-scheme: $dark-color-scheme) {
+      fill: $primary-color-light;
+    }
+  }
+}

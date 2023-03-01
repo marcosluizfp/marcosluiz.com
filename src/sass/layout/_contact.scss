@@ -1,0 +1,16 @@
+#contact {
+  margin-top: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.contact {
+  &__image {
+    height: 100%;
+    object-fit: cover;
+
+    @include for-phone-only {
+      display: none;
+      /* grid-row: 2/2; */
+    }
+  }
+}
